@@ -1,0 +1,141 @@
+/*Glenn Ford*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(4, 4, 121); 
+    color: white;
+}
+
+nav {
+    background-color: #444;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0004ff; 
+}
+
+section {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+}
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+img {
+    width: 75%;
+    max-width: 100%; 
+    display: block;
+    margin: 0 auto; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 100px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.p1 {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: grey;
+    font-style: initial;
+    text-align: center;
+}
+
+.left {
+    left: 40px;
+}
+
+.right {
+    right: 40px;
+}
+
+#education, #summary, #skills {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+footer {
+    color: white; 
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(4, 4, 121);
+    margin-top: auto;
+}
+
+/*media query */
+@media (max-width: 600px) {
+    header img {
+        width: 80px; 
+    }
+
+    #education,
+    #summary,
+    #skills {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    header img {
+        width: 100px;
+    }
+
+    #education,
+    #summary,
+    #skills {
+        margin: 20px;
+    }
+}
